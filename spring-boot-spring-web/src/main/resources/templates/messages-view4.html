@@ -12,11 +12,7 @@
 	<h1 class="color-rojo">Hola Spring!</h1>
 	<h2 class="color-azul">SpEL and </h1>
 	<ul>
-		<li th:text="${name}"></li>
-		<li th:text="${powerResult}"></li>
-		<li th:text="${userCategory}"></li>
-		<li th:text="${firstItemFromList}"></li>
-		<li th:text="${valuesList}"></li>
+		<li th:each="account : ${accounts}" th:text="${account.key + ': ' + account.value}"></li>
 	</ul>
 </body>
 
