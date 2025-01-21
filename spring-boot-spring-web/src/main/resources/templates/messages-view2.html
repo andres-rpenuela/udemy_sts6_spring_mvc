@@ -1,0 +1,24 @@
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<link>
+	<meta charset="UTF-8" />
+	<tile>Insert title here</tile>
+	<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+	</link>
+</head>
+
+<body>
+	<h1 class="color-rojo">Hola Spring!</h1>
+	<h2 class="color-azul">Fruts Array Message</h1>
+	<ul>
+		<li th:each="frut : ${frutsArray}" th:text="${frut}"></li>
+	</ul>
+	<hr>
+	<h2 class="color-azul">Fruts List Message</h1>
+	<ul>
+		<li th:each="frut : ${frutsList}" th:text="${frut}"></li>
+	</ul>
+</body>
+
+</html>
