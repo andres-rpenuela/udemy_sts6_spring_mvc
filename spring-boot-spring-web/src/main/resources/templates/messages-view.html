@@ -1,0 +1,21 @@
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<link>
+	<meta charset="UTF-8" />
+	<tile>Insert title here</tile>
+	<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+	</link>
+</head>
+
+<body>
+	<h1 class="color-rojo">Hola Spring!</h1>
+	<h2 class="color-azul">User Message</h1>
+	<ul>
+		<li th:text="${user.name}"></li>
+		<li th:text="${user.surname}"></li>
+		<li th:text="${user.age}"></li>
+	</ul>
+</body>
+
+</html>
