@@ -1,0 +1,26 @@
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<link>
+	<meta charset="UTF-8" />
+	<tile>Insert title here</tile>
+	<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+	</link>
+</head>
+
+<body>
+	<h1 class="color-rojo">Hola Spring!</h1>
+	<h2 class="color-azul">Environment of Spring</h1>
+	<ul>
+		<li> <a th:href="@{/messages}">Messages</a></li>
+		<li> <a th:href="@{'/messages7/' + ${fromName}}">messages/{name} v1</a></li>
+		<li> <a th:href="@{/messages7/{name2}(name2=${fromName})}">messages/{name} v2</a></li>
+		<li> <a th:href="@{'/messages7/params?name='+${fromName}}">messages/params?name=Andres </a></li>
+		<li> <a th:href="@{/messages7/params(name=${fromName})}">messages/params?name=Andres v2</a></li>
+		<li> <a th:href="@{/messages7/params(name='Ramon')}">messages/params?name=Andres v2</a></li>
+	</ul>
+	
+	<h2 th:text="${name}"></h2>
+</body>
+
+</html>
