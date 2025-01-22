@@ -9,10 +9,10 @@
 </head>
 
 <body>
-	<h1 class="color-rojo" th:text="${'Hola '+ name +'!'}"></h1>
-	<h2 class="color-azul">SpEL and </h1>
+	<h1 class="color-rojo">Hola Spring!</h1>
+	<h2 class="color-azul">Environment of Spring</h1>
 	<ul>
-		<li th:each="account : ${accounts}" th:text="${account.key + ': ' + account.value}"></li>
+		<li th:each="frut : ${fruts}" th:text="${frut}"></li>
 	</ul>
 </body>
 
